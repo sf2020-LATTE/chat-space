@@ -80,6 +80,7 @@
       color:#38aef0;
       font-size:16px;
       padding:28px 20px 0 20px;
+      text-decoration:none;
       }
     }
   }
@@ -107,5 +108,43 @@
   &__message-form{
     background-color: #d2d2d2;
     height:90px;
+    padding:20px 50px 40px 50px;
+    .Form{
+      height: 50px;
+      display: flex;
+      justify-content: space-between;
+      &__content{
+        width:100%;
+        position: relative;
+        background-color: blue;
+        .input-text{
+          width:100%;
+          height:50px;
+          padding-left:10px;
+        }
+        .input-box__image{
+          height:50px;
+          width:25px;
+          position: absolute;
+          right:10px;
+          top:15px;
+          .image-file{
+            visibility: hidden;
+          }
+        }
+      }
+      &__submit{
+        margin-left:15px;
+          &--btn{
+            color:#fff;
+            font-size: 16px;
+            text-decoration:none;
+            padding:0 30px 0 30px;
+            background-color:#38aef0;
+            height:50px;
+            border:none;
+          }
+      }
+    }
   }
 }

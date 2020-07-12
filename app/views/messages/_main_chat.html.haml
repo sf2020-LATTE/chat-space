@@ -31,3 +31,12 @@
     .message-text
       おはよう
   .Chat-main__message-form
+    .Form 
+      .Form__content
+        %input.input-text{placeholder:"type a message",tpe: "text"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{class:"image-file",type: "file"}
+      .Form__submit
+        %input.Form__submit--btn{type: "submit" ,value: "Send"}
+
