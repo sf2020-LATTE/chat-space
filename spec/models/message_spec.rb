@@ -17,6 +17,7 @@ RSpec.describe Message, type: :model do
     end
 
     context 'can not save' do
+      
       it 'is invalid without content and image' do
         message = build(:message, content: nil, image: nil)
         message.valid?
@@ -26,6 +27,7 @@ RSpec.describe Message, type: :model do
       it 'is invalid without group_id' do
         message = build(:message, group_id: nil)
         message.valid?
+        binding.pry
         expect(message.errors[:group]).to include("を入力してください")
       end
 
