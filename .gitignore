@@ -31,4 +31,4 @@ yarn-debug.log*
 .yarn-integrity
 
  # Ignore uploaded files in development
- /public/uploads/message/image
+ /public/uploads
